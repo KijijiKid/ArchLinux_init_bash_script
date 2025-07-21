@@ -1,9 +1,9 @@
 #!/bin/bash
 set -euo pipefail
 
-DISK="/dev/nvme0n1"
-EFI_PART="${DISK}p1"
-ROOT_PART="${DISK}p2"
+DISK="/dev/sda"
+EFI_PART="${DISK}1"
+ROOT_PART="${DISK}2"
 
 echo "=== Enabling NTP ==="
 timedatectl set-ntp true
